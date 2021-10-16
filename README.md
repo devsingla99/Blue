@@ -17,11 +17,7 @@ To run the log analyser open the LOG_ANALYSER.ipynb and enter the path where log
 * RE (for installation   ----->>  pip install re)
 ### DESCRIPTION 
 In this work sample provided to us we have taken a apache log file  which contains info regarding ip adress,user agent,status code,api,request type etc.
-So we have decided to use regular expression for matching th pattern in the entire log file .
+So we have decided to use regular expression for matching the pattern in the entire log file .
 We first read the log file to see how different patterns can be uniquely identified.
-Beginning with extracting ip adress . We have used regex tester and succesfully extracted ip adresses after write its regular expression.
-We have stored all ip adresses in a list. We have also calculate frequency of each ip adress .Then we have extracted status code. Its identification in the given log file was that it is a 3 digit number and there was a space at before starting and at ending of status code.
-After extracting it we have put it in a list. Then moving ahead we formed the regular expression for request type . We explored and found common request type like put,get,head,delete,connectetc.
-And stored the result obtained in a list. Then we worked on extracting api and wrote regular expression for the same and stored all the api's in a list.
-At last we created and empty data frame and embedded all the columns like ipadress,freq_ofipadress,user_agent,statuscode,api and request type.
-After that we converted the data frame to csv file. So this we we extracted 6 things from the log file and saved it in a csv file.
+Beginning with extracting ip adress . We have used regex tester and succesfully extracted ip adresses, status code, user agent, api, request type and frequency of ip address using  regular expression. We explored and found there are 5 (put,get,head,delete and connect) major request types in server log.Then, we stored result obtained in a list. At last we created and empty data frame and embedded all the extracted features.
+After that we converted the data frame to csv file. So this way we extracted 6 things from the log file and saved it in a csv file.
